@@ -1,0 +1,47 @@
+script_key="@HowlV4";
+getgenv().Howl = {
+    ["Global"] = {
+        ["GlobalChecks"] = {
+            ['KnockedChecks'] = true,
+            ['WallCheck'] = true
+        },
+        ["Keybinds"] = {
+            ['AimAssistKeybind'] = "C",
+            ['AutoBuyKeybind'] = "Z"
+        },
+    },
+    ["Silent"] = {
+        ['Enabled'] = true,
+        ['Part'] = "Head",
+        ['ClosestPart'] = false,
+        ['Prediction'] = 0.139,
+        ["SilentFOV"] = {
+            ['Visible'] = true,
+            ['Radius'] = 30,
+            ['SilentFOVColor'] = Color3.new(255, 255, 255),
+            ['Thickness'] = 1,
+            ['StickyFov'] = false
+        },
+    },
+    ['AimAssist'] = {
+        ['Predict'] = false,
+        ['Part'] = "HumanoidRootPart",
+        ['Prediction'] = 0.135,
+        ['Smooth'] = false,
+        ['Smoothness'] = 0.081,
+        ['Shake'] = false,
+        ["ShakeLevels"] = {
+            ['ValueX'] = 1,
+            ['ValueY'] = 1,
+            ['ValueZ'] = 0
+        },
+    },
+    ["AutoBuyArea"] = {
+        ['Distance'] = 10,
+    },
+    ["Options"] = {
+        ["UpdateNotification"] = true,
+    },
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/331adfab11d09d49a765508ef89a12bd.lua"))()
