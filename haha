@@ -6,34 +6,34 @@ getgenv().Howl = {
             ['WallCheck'] = true
         },
         ["Keybinds"] = {
-            ['AimAssistKeybind'] = "C",
+            ['AimAssistKeybind'] = "E",
             ['AutoBuyKeybind'] = "Z"
-        },
-    },
-    ["Silent"] = {
-        ['Enabled'] = true,
-        ['Part'] = "Head",
-        ['ClosestPart'] = false,
-        ['Prediction'] = 0.139,
-        ["SilentFOV"] = {
-            ['Visible'] = true,
-            ['Radius'] = 30,
-            ['SilentFOVColor'] = Color3.new(255, 255, 255),
-            ['Thickness'] = 1,
-            ['StickyFov'] = false
         },
     },
     ['AimAssist'] = {
         ['Predict'] = false,
-        ['Part'] = "HumanoidRootPart",
-        ['Prediction'] = 0.135,
-        ['Smooth'] = false,
-        ['Smoothness'] = 0.081,
+        ['Part'] = "Head",
+        ['Prediction'] = 0.12774,
+        ['Smooth'] = true,
+        ['Smoothness'] = 0.0351,
         ['Shake'] = false,
         ["ShakeLevels"] = {
             ['ValueX'] = 1,
             ['ValueY'] = 1,
             ['ValueZ'] = 0
+        },
+    },
+    ["Silent"] = {
+        ['Enabled'] = true,
+        ['Part'] = "UpperTorso",
+        ['ClosestPart'] = true,
+        ['Prediction'] = 0.12591,
+        ["SilentFOV"] = {
+            ['Visible'] = false,
+            ['Radius'] = 200,
+            ['SilentFOVColor'] = Color3.new(0.12211, 0.835294, 0.901961),
+            ['Thickness'] = 0.1,
+            ['StickyFov'] = false
         },
     },
     ["AutoBuyArea"] = {
@@ -42,6 +42,10 @@ getgenv().Howl = {
     ["Options"] = {
         ["UpdateNotification"] = true,
     },
+    ["MouseTP"] = {
+        ['Enabled'] = true,
+        ['Part'] = "LowerTorso",
+        ['Smothness'] = 0.10
+    },
 }
-
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/331adfab11d09d49a765508ef89a12bd.lua"))()
